@@ -1,0 +1,1 @@
+import Prices from './prices';

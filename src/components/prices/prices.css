@@ -1,0 +1,66 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+      
+    }
+  }
+
+
+  .container {
+    max-width: 100%;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+    z-index: 1;
+  }
+  
+  .card-deck .card {
+    min-width: 210px;
+  }
+  .pricing-header > h1 {
+    color: white;
+    font-weight: bold;
+  }
+  .pricing-header > p {
+    color: white;
+    font-weight: bold;
+  }
+  .card-deck {
+    height: 400px;
+    margin-right: 0px;
+    margin-left: 40px;
+  }
+  .card-header {
+    background-color: black;
+    color: white;
+  }
+  .mb-3, .my-3 {
+    margin-bottom: 0;
+  }
+  .card-body > button {
+    position: relative;
+    top: 69%;
+  }
+  .card-body > h1 {
+    position: relative;
+    top: 50px;
+    color: white;
+    margin-bottom: -35px;
+  }
+  .section__prices{
+    position: relative;
+    top: 900px;
+    background-image: url(https://www.hihonor.com/content/dam/honor/ua/products/smartphone/honorplay/img/honorplay-feature15-pc.jpg);
+  }
+  .btn {
+    border-color: red;
+  }
+  .btn:hover{
+    background-color: red;
+    border-color: black;
+  }
+

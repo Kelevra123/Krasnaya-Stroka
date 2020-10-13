@@ -1,0 +1,100 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+
+  position: relative;
+  width: auto;
+  height: 5679px;
+  
+  background: #FFFFFF;
+  
+  }
+  #site {
+    max-width: 1920px;
+    background: #F2F2F2;
+    /* background-image: url(https://podsolnuh.media/live/wp-content/uploads/lomo_17_11496_oboi_krasnyj_fon_1920x1080.jpg); */
+  }
+.slider__section {
+  position: absolute;
+width: 90%;
+height: 680px;
+left: calc(50% - 1660px/2);
+top: 820px;
+/* background-image: url(../images/CombinedShapeRed.png) */
+}
+.combinated-red {
+  position: absolute;
+width: 950px;
+height: 1000px;
+left: 0px;
+top: 800px;
+
+background: url(../images/CombinedShapeRedd.png);
+}
+#content #myCarousel
+ .carousel-inner 
+ .carousel-item {
+  height: 880px;
+}
+
+img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.carousel-item > .container {
+  position: absolute;
+width: 734px;
+height: 337px;
+left: 471.5px;
+top: 171.5px;
+}
+/* .carousel-item-text {
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 100px;
+}
+.item-btn {
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  left: 200px;
+} */
+.carousel-caption > h1 {
+  color: black;
+
+  font-family: Raleway;
+  text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+}
+.carousel-caption > p {
+  color: black;
+  font-family: Raleway;
+  text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 82px;
+}
+.item-btn {
+  color: white;
+  font-family: Raleway;
+  text-align: center;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+
+
+background: #66E0E5;
+}
+
