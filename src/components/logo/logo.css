@@ -1,0 +1,24 @@
+.header__logo_bottom_black {
+    position: absolute;
+    width: 90%;
+  }
+  .logo_text {
+    position: absolute;
+    width: 100%;
+  
+  left: 0px;
+  top: 0px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 19px;
+  /* identical to box height */
+  
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 8px;
+  
+  color: red;
+  }

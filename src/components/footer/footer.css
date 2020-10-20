@@ -1,0 +1,85 @@
+.footer_section {
+    position: relative;
+    height: 216px;
+    left: 0px;
+    top: 1100px;
+    
+    background: linear-gradient(360deg, #0E0101 0%, rgba(5, 0, 0, 0) 101.68%), #870000;
+}
+.footer_subscribe {
+    position: absolute;
+width: 339px;
+height: 35px;
+left: 817px;
+top: 60px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.footer_viber_icon {
+    position: absolute;
+width: 86px;
+height: 86px;
+left: 742px;
+top: 120px;
+
+background: url(../images/icons/viber.png);
+}
+.footer_facebook_icon {
+    position: absolute;
+width: 85px;
+height: 86px;
+left: 859px;
+top: 120px;
+
+background: url(../images/icons/fb.png);
+}
+.footer_telegram_icon {
+    position: absolute;
+width: 86px;
+height: 86px;
+left: 975px;
+top: 120px;
+
+background: url(../images/icons/telegram.png);
+}
+.footer_instagram_icon {
+    position: absolute;
+width: 85px;
+height: 86px;
+left: 1092px;
+top: 120px;
+
+background: url(../images/icons/instagram.png);
+}
+.footer_instagram_icon:hover, .footer_telegram_icon:hover, .footer_facebook_icon:hover, .footer_viber_icon:hover {
+   background-color: red;
+}
+.footer_maps {
+    position: absolute;
+    left: 1525px;
+    top: 55px;
+}
+.footer_contacts {
+    position: absolute;
+width: 415px;
+height: 120px;
+left: 40px;
+top: 65px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+}

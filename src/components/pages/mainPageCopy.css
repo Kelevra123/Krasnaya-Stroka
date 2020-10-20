@@ -5,8 +5,8 @@
 body {
 
   position: relative;
-  width: auto;
-  height: 5679px;
+  width: 1879px;
+  height: 1800px;
   
   background: #FFFFFF;
   
@@ -20,7 +20,7 @@ body {
   position: absolute;
 width: 90%;
 height: 680px;
-left: calc(50% - 1660px/2);
+left: 70px;
 top: 820px;
 /* background-image: url(../images/CombinedShapeRed.png) */
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled, {keyframes} from 'styled-components';
 import {fadeIn} from 'react-animations';
 import img1 from '../images/slider4.jpg'
@@ -9,70 +9,69 @@ const StyledDiv = styled.div`animation: 2s ${keyframes`${fadeIn}`}`;
 
 function Slider()  {
     
-
-    const [imgs, setImgs] = useState([{body: img2, id: 1, label: 'Приветствую', text: 'Здесь ты точно найдешь то, что искал.', active: true}, 
-    {body: img3, id: 2, label: '', text: 'Ваш комфорт - наш приоритет.', active: false}, 
-    {body: img1, id: 3, label: '', text: 'Уютное рабочее место в центре города.', active: false}
-    ]);
-
     const [startIndex, setStartIndex] = useState(1);
+    const [imgs, setImgs] = useState(
+        [
+            {   
+                body: img2, 
+                id: 1, label: 'Приветствую', 
+                text: 'Здесь ты точно найдешь то, что искал.', 
+                active: true
+            }, 
+            {   
+                body: img3, 
+                id: 2, 
+                label: '', 
+                text: 'Ваш комфорт - наш приоритет.', active: false
+            }, 
+            {   
+                body: img1, 
+                id: 3, label: '', 
+                text: 'Уютное рабочее место в центре города.', 
+                active: false
+            }
+    ]
+    );
+
+    
 
 
-    const slide = (startIndex) => {
-        const item = imgs.filter(item => item.id === startIndex);
-        const slid = item.map(item => {
-            const {id, label, body, text} = item;
-            return (
-                <StyledDiv key={id} className='carousel-item active'>
-                    <img src={body} alt='Слайд'/>
+        const slide = (startIndex) => {
+            const item = imgs.filter(item => item.id === startIndex);
+            const slid = item.map(item => {
+                const {id, label, body, text} = item;
+                return (
+                    <StyledDiv key={id} className='carousel-item active'>
+                        <img src={body} alt='Слайд'/>
                         <div className="container">
                         <div className="carousel-caption text-left">
                             <h1>{label}</h1>
                             <p className='carousel-item-text'>{text}</p>
-                            {/* <p><a className="btn btn-lg btn-primary item-btn" href="#" role="button">Галерея</a></p> */}
-              </div>
-            </div>
-          </StyledDiv> 
-            )
-        });
-        return slid;
+                        </div>
+                        </div>
+                    </StyledDiv> 
+                )
+            });
+            return slid;
         }
 
-        const toggleActive = () => {
-            setImgs(imgs => {
-                imgs.forEach(im => im.active = false)
-                return imgs;
-            })
-            setImgs(imgs => {
-                imgs.map(img => {
-                    if (img.id === startIndex) {
-                       img.active = true;
-                    }
-                })
-                return imgs;
-            })
-
-        }
 
         const slideRight = () => {
             if (startIndex === imgs.length) {
                 setStartIndex(1);
-                toggleActive();
-
             } else {
                 setStartIndex(startIndex + 1);
-                toggleActive();
             }      
         }
         const slideLeft = () => {
             if (startIndex <= 1 ) {
                 setStartIndex(imgs.length);
-                toggleActive();
             } else {
                 setStartIndex(startIndex - 1);
-                toggleActive();
             }      
         }
+
+
         const indication = () => {
 
             const ind = imgs.map(item => {
@@ -99,7 +98,7 @@ function Slider()  {
         const indicators = indication();
 
         return (
-            <section className='slider__section'>
+        <section className='slider__section'>
             <div id='content'
                 className='site-content'>
                     <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -119,9 +118,9 @@ function Slider()  {
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             <span className="sr-only">Next</span>
                         </div>
-    </div>
-                </div>
-                </section>
+                    </div>
+            </div>
+        </section>
         )
     }
 

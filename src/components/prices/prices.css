@@ -32,7 +32,7 @@ html {
   .card-deck {
     height: 400px;
     margin-right: 0px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
   .card-header {
     background-color: black;
@@ -53,8 +53,9 @@ html {
   }
   .section__prices{
     position: relative;
-    top: 900px;
+    top: 1100px;
     background-image: url(https://www.hihonor.com/content/dam/honor/ua/products/smartphone/honorplay/img/honorplay-feature15-pc.jpg);
+    width: 1863.98px;
   }
   .btn {
     border-color: red;

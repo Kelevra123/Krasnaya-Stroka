@@ -1,0 +1,192 @@
+.galery_inside {
+    position: relative;
+width: 1864px;
+height: 939px;
+
+background: url(../../images/bgGalery.png);
+}
+body {
+    width: 1864px;
+    height: 939px; 
+}
+.galery_logo{
+    position: absolute;
+width: 387px;
+height: 167px;
+left: 285px;
+top: 55px;
+
+background: url(../../images/KsLogoGalery.png);
+border-radius: 63px;
+}
+.galery_main_line {
+    position: absolute;
+width: 1393px;
+height: 2px;
+left: 235px;
+top: 250px;
+
+background: #F10E0E;
+mix-blend-mode: normal;
+border: 4px solid #FF0000;
+}
+.galery_slogan {
+    position: absolute;
+width: 617px;
+height: 37px;
+left: 964px;
+top: 120px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #0B0202;
+}
+
+.galery_first_child {
+    position: absolute;
+width: 420px;
+height: 180px;
+left: 383px;
+top: 359px;
+
+background: linear-gradient(109.65deg, #F8E4E4 36.84%, rgba(255, 255, 255, 0) 50.26%), rgba(196, 196, 196, 0.5);
+}
+.first_child_image {
+    position: absolute;
+width: 210px;
+height: 180px;
+left: 0px;
+top: 0px;
+
+background: url(../../images/gostSmall.png);
+}
+.first_child_text {
+    position: absolute;
+width: 202px;
+height: 81px;
+left: 218px;
+top: 49px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+.galery_second_child {
+    position: absolute;
+width: 420px;
+height: 180px;
+left: 1061px;
+top: 359px;
+
+background: linear-gradient(109.65deg, #F8E4E4 36.84%, rgba(255, 255, 255, 0) 50.26%), rgba(196, 196, 196, 0.5);
+}
+.second_child_image {
+    position: absolute;
+width: 210px;
+height: 180px;
+left: 0px;
+top: 0px;
+
+background: url(../../images/burSmall.png);
+}
+.second_child_text {
+    position: absolute;
+width: 202px;
+height: 81px;
+left: 218px;
+top: 50px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.galery_third_child {
+    
+position: absolute;
+width: 420px;
+height: 180px;
+left: 383px;
+top: 620px;
+
+background: linear-gradient(109.65deg, #F8E4E4 36.84%, rgba(255, 255, 255, 0) 50.26%), rgba(196, 196, 196, 0.5);
+}
+.third_child_image {
+    position: absolute;
+width: 210px;
+height: 180px;
+left: 0px;
+top: 0px;
+
+background: url(../../images/mastSmall.png);
+}
+.third_child_text {
+    position: absolute;
+width: 202px;
+height: 81px;
+left: 218px;
+top: 49px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+.galery_four_child {
+    position: absolute;
+width: 420px;
+height: 180px;
+left: 1061px;
+top: 620px;
+
+background: linear-gradient(109.65deg, #F8E4E4 36.84%, rgba(255, 255, 255, 0) 50.26%), rgba(196, 196, 196, 0.5);
+}
+.four_child_image {
+    position: absolute;
+width: 210px;
+height: 180px;
+left: 0px;
+top: 0px;
+
+background: url(../../images/gostSmall.png);
+}
+.four_child_text {
+    position: absolute;
+width: 202px;
+height: 81px;
+left: 218px;
+top: 41px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #000000;
+}

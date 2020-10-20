@@ -1,0 +1,123 @@
+.media {
+    position: relative;
+width: 1879px;
+height: 1080px;
+left: 0px;
+top: 210px;
+background: linear-gradient(180deg, #FF0000 35%, #000000 90.68%);
+}
+.logo-small {
+    position: absolute;
+width: 624px;
+height: 270px;
+left: 0px;
+top: 0px;
+
+background: url(../../images/KsLogoSmall.png);
+}
+
+
+.iphone-svg {
+
+    position: absolute;
+    width: 421px;
+    height: 846px;
+    left: 100px;
+    top: 23px;
+    
+
+
+background: url(../../images/iphone.png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+z-index: 10;
+}
+.iphone-inner {
+    
+position: absolute;
+width: 397px;
+height: 825px;
+left: 117px;
+top: 28px;
+
+background: url(../../images/iphone_inner.png);
+border-radius: 64px;
+z-index: 1;
+}
+.ipad-svg {
+    position: absolute;
+width: 1142px;
+height: 826px;
+left: 678px;
+top: 46px;
+
+background: url(../../images/Ipad.png);
+z-index: 10;
+}
+.ipad-inner {
+    position: absolute;
+width: 950px;
+height: 712px;
+left: 771px;
+top: 93px;
+
+background: url(../../images/ipadInner.png);
+z-index: 1;
+}
+
+.subscribe {
+    position: absolute;
+width: 339px;
+height: 35px;
+left: 830px;
+top: 1030px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.viber_icon {
+    position: absolute;
+width: 86px;
+height: 86px;
+left: 742px;
+top: 937px;
+
+background: url(../../images/icons/viber.png);
+}
+.facebook_icon {
+    position: absolute;
+width: 85px;
+height: 86px;
+left: 859px;
+top: 937px;
+
+background: url(../../images/icons/fb.png);
+}
+.telegram_icon {
+    position: absolute;
+width: 86px;
+height: 86px;
+left: 975px;
+top: 937px;
+
+background: url(../../images/icons/telegram.png);
+}
+.instagram_icon {
+    position: absolute;
+width: 85px;
+height: 86px;
+left: 1092px;
+top: 937px;
+
+background: url(../../images/icons/instagram.png);
+}
+.instagram_icon:hover, .telegram_icon:hover, .facebook_icon:hover, .viber_icon:hover {
+   background-color: red;
+}

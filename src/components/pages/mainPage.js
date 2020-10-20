@@ -4,7 +4,8 @@ import Slider from '../slider';
 import Marketing from '../marketing';
 import Prices from '../prices/prices.js';
 import './mainPageCopy.css';
-import Perehod from '../perehod/perehod';
+import Logo from '../logo/logo';
+import Footer from '../footer/footer'
 
 
 const MainPage = () => {
@@ -12,10 +13,11 @@ const MainPage = () => {
         <div id='site'
         className='page'>
             <Header/>
+            <Logo/>
             <Slider/>
             <Marketing/>
             <Prices/>
-            <Perehod/>
+            <Footer/>
         </div>
     )
 }

@@ -1,0 +1,419 @@
+.galery_inside {
+    position: relative;
+width: 1864px;
+height: 939px;
+
+background: url(../../images/bgGalery.png);
+}
+body {
+    width: 1864px;
+    height: 939px; 
+}
+.galery_logo{
+    position: absolute;
+width: 387px;
+height: 167px;
+left: 285px;
+top: 55px;
+
+background: url(../../images/KsLogoGalery.png);
+border-radius: 63px;
+}
+.galery_main_line {
+    position: absolute;
+width: 1393px;
+height: 2px;
+left: 235px;
+top: 250px;
+
+background: #F10E0E;
+mix-blend-mode: normal;
+border: 4px solid #FF0000;
+}
+.galery_slogan {
+    position: absolute;
+width: 617px;
+height: 37px;
+left: 964px;
+top: 120px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #0B0202;
+}
+.galery_slider {
+    position: absolute;
+width: 970px;
+height: 524px;
+left: 448px;
+top: 340px;
+
+/* background: url(../../images/gost1.png); */
+}
+.galery_dot_nav_main {
+    position: absolute;
+    width: 200px;
+    height: 272px;
+    left: 248px;
+    top: 340px;
+}
+.dot_nav_header {
+    position: absolute;
+    width: 179px;
+    height: 48px;
+    left: 20px;
+    top: 7px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.105em;
+    
+    color: white;
+    border-bottom: solid 2px black;
+}
+.dot_nav_footer {
+    position: absolute;
+    width: 144px;
+    height: 21px;
+    left: 26px;
+    top: 170px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.825em;
+    
+    color: white;
+    
+    
+}
+.collector_krugov {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 20px;
+    top: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    box-sizing: border-box;
+}
+.dot_nav_second {
+    
+position: absolute;
+width: 170px;
+height: 189px;
+left: 0px;
+top: 53px;
+
+box-sizing: border-box;
+}
+.active_krug {
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+width: 36px;
+height: 36px;
+margin: 2px;
+border: 3px;
+
+
+box-sizing: border-box;
+background: url(../../images/liActiv.png)
+}
+.krug {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+width: 36px;
+height: 36px;
+margin: 2px;
+border: 3px;
+opacity: 70%;
+
+
+background: url(../../images/li.png);
+}
+.galery_galery_button {
+    position: absolute;
+width: 134px;
+height: 37px;
+left: 438px;
+top: 282px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.galery_about_button {
+    position: absolute;
+width: 109px;
+height: 37px;
+left: 869px;
+top: 282px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.galery_contacts_button {
+    position: absolute;
+width: 167px;
+height: 37px;
+left: 1259px;
+top: 282px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+text-align: right;
+
+color: #000000;
+}
+.galery_slider_black {
+    position: absolute;
+width: 970px;
+height: 524px;
+left: 447px;
+top: 340px;
+
+background: rgba(17, 17, 17, 0.98);
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+.slider_icons {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 44px;
+height: 356px;
+left: 60px;
+top: 60px;
+}
+.icon_1 {
+    position: absolute;
+    left: 6.19%;
+    right: 89.28%;
+    top: 11.45%;
+    bottom: 82.44%;
+
+
+background: url(../../images/icons/Friends.png);
+}
+.icon_2 {
+    position: absolute;
+    left: 6.39%;
+    right: 89.48%;
+    top: 40.84%;
+    bottom: 51.53%;
+    
+    background: url(../../images/icons/VectorDia.png);
+}
+.icon_3 {
+    position: absolute;
+    left: 6.39%;
+    right: 89.48%;
+    top: 71.76%;
+    bottom: 20.61%;
+    
+    background: url(../../images/icons/VectorPaint.png);
+}
+.text_1 {
+    position: absolute;
+width: 663px;
+height: 113px;
+left: 132px;
+top: 54px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.text_2 {
+    position: absolute;
+width: 663px;
+height: 113px;
+left: 132px;
+top: 212px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.text_3 {
+    position: absolute;
+width: 663px;
+height: 113px;
+left: 132px;
+top: 374px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+.exit_border {
+    position: absolute;
+width: 100px;
+height: 100px;
+left: 870px;
+top: 0px;
+
+background: #020000;
+border: 1px solid #FE0000;
+box-sizing: border-box;
+}
+.exit_vector {
+    position: absolute;
+left: 92.78%;
+right: 3.09%;
+top: 5.73%;
+bottom: 86.64%;
+
+background: url(../../images/icons/VectorExit.png);
+}
+.maps {
+    position: absolute;
+width: 495px;
+height: 370px;
+left: 50px;
+top: 77px;
+
+}
+#main_text {
+    position: absolute;
+width: 305px;
+height: 28px;
+left: 565px;
+top: 100px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+#second_text {
+    position: absolute;
+width: 305px;
+height: 62px;
+left: 565px;
+top: 130px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: flex-end;
+
+color: #FFFFFF;
+}
+#third_text {
+    position: absolute;
+width: 291px;
+height: 96px;
+left: 565px;
+top: 233px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+}
+.galery_back_block {
+    position: absolute;
+width: 235px;
+height: 939px;
+left: 0px;
+top: 0px;
+
+}
+.back_block_text {
+    position: absolute;
+width: 235px;
+height: 167px;
+left: 0px;
+top: 386px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 106.19%;
+/* or 51px */
+
+display: flex;
+align-items: center;
+text-align: center;
+display: none;
+
+color: rgba(255, 255, 255, 0.3);
+}
+.galery_back_block:hover > .back_block_text {
+    display: block;
+}
+.galery_galery_button:hover, .galery_about_button:hover, .galery_contacts_button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}

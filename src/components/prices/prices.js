@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './prices.css';
 import styled, {keyframes} from 'styled-components';
 import {fadeIn} from 'react-animations';
+import {Link} from 'react-router-dom';
 import img2 from '../images/prices1.jpg';
 import img1 from '../images/prices2.jpg';
 import img3 from '../images/prices3.jpg';
@@ -19,12 +20,10 @@ const prices3 = {
   backgroundImage: `url(${img3})`,
   backgroundSize: '100%'
 }
-const hidden = {
-  backgroundColor: 'red'
-}
 const StyledDiv = styled.div`
 animation: 2s ${keyframes`${fadeIn}`};
  background-color: red;`
+ 
 const buttonStyle = {
   position: 'relative',
   top: '69%',
@@ -41,9 +40,9 @@ const Prices = () => {
     {name: 'Мастерская души', price: '230 ГРН', style: prices3, visible: true}
   ])
 
-  const pricesShow = (item, e) => {
+  const pricesShow = (item, is) => {
     const index = cards.findIndex(card => card.name === item);
-    const newItem = {...cards[index], visible: false};
+    const newItem = {...cards[index], visible: is};
     const newArray = [
       ...cards.slice(0, index),
       newItem,
@@ -52,51 +51,38 @@ const Prices = () => {
     return setCards(newArray);
     }
 
-    const pricesHide = (item, e) => {
-      const index = cards.findIndex(card => card.name === item);
-      const newItem = {...cards[index], visible: true};
-      const newArray = [
-        ...cards.slice(0, index),
-        newItem,
-        ...cards.slice(index + 1)
-      ]
-      return setCards(newArray);
-      }
-
-
-
-
-  
-
   const cardsCreate = () => {
     const verstka = cards.map(card => {
         if (card.visible) {
-      return (
-        <div key={card.price} className="card mb-4 shadow-sm">
-        <div className="card-header">
-          <h4 className="my-0 font-weight-normal">{card.name}</h4>
-        </div>
-        <div className="card-body" style={card.style} onMouseEnter={() => pricesShow(card.name)} onMouseLeave={() => setCards(card=> !card.visible)}>
-          {/* <h1 className="card-title pricing-card-title">{card.price} <small className="text-small">/ mo</small></h1> */}
-          <ul className="list-unstyled mt-3 mb-4">
-
-          </ul>
-          <button type="button"  className="btn btn-lg btn-block btn-outline-primary">Галерея</button>
-        </div>
-      </div>
-    )
+            return (
+              <div key={card.price} className="card mb-4 shadow-sm">
+                <div className="card-header">
+                  <h4 className="my-0 font-weight-normal">{card.name}</h4>
+                </div>
+                <div className="card-body" 
+                style={card.style} 
+                onMouseEnter={() => pricesShow(card.name, false)}
+                >
+                  <Link to='/galery/' type="button" style={buttonStyle}  className="btn btn-lg btn-block btn-outline-primary">Галерея</Link>
+                </div>
+            </div>
+          )
       } else {
-        return (
-          <div key={card.price} className="card mb-4 shadow-sm">
-          <div className="card-header">
-            <h4 className="my-0 font-weight-normal">{card.name}</h4>
-          </div>
-          <StyledDiv className="card-body" onMouseEnter={() => pricesShow(card.name)} onMouseLeave={() => pricesHide(card.name)}>
-            <h1 className="card-title pricing-card-title">{card.price} <small className="text-small">/ ЧАС</small></h1>
-            <button type="button" style={buttonStyle} className="btn btn-lg btn-block btn-outline-primary">Галерея</button>
-          </StyledDiv>
-        </div>
-        )
+            return (
+              <div key={card.price} className="card mb-4 shadow-sm">
+                <div className="card-header">
+                  <h4 className="my-0 font-weight-normal">{card.name}</h4>
+                </div>
+                <StyledDiv 
+                className="card-body" 
+                onMouseLeave={() => pricesShow(card.name, true)}>
+                  <h1 className="card-title pricing-card-title">{card.price} 
+                    <small className="text-small">/ ЧАС</small>
+                  </h1>
+                  <Link to='/galery/' type="button" style={buttonStyle} className="btn btn-lg btn-block btn-outline-primary">Галерея</Link>
+                </StyledDiv>
+            </div>
+            )
       }
     })
     return verstka;
@@ -107,22 +93,17 @@ const Prices = () => {
 
       return (
           <section className='section__prices'>
-          <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 className="display-4">Наши цены</h1>
-    <p className="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-  </div>
-
-  <div className="container">
-    <div className="card-deck text-center">
-        {itemsCards}
-
-
-    </div>
-
-    
-  </div>
-  <div className='red_prices'/>
-  </section>
+            <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+              <h1 className="display-4">Наши цены</h1>
+                <p className="lead">Quickly build an effective pricing table for your potential           customers with this Bootstrap example. It’s built with default Bootstrap components and           utilities with little customization.</p>
+            </div>
+            <div className="container">
+              <div className="card-deck text-center">
+                  {itemsCards}
+              </div>              
+            </div>
+            <div className='red_prices'/>
+          </section>
       )
   }
 
